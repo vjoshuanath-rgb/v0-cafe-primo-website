@@ -9,25 +9,12 @@ const dmSans = DM_Sans({ subsets: ["latin"] })
 const playfair = Playfair_Display({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Café Primo | Pet-Friendly Coffee Shop",
-  description: "A cozy, pet-friendly café where every cup is crafted with love and every furry friend is welcome.",
+  title: "Café Primo",
+  description: "Your neighborhood café in Carcar City. Good coffee, good food, and good reads.",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/images/logo.png",
+    apple: "/images/logo.png",
   },
 }
 
