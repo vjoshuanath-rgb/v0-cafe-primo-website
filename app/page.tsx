@@ -26,19 +26,19 @@ const features = [
 
 const popularItems = [
   {
+    name: "Bạc xỉu (Coconut coffee)",
+    price: "₱130 / ₱140",
+    image: "/images/bac-xiu.jpg",
+  },
+  {
     name: "Salted Cream Latte",
-    price: 150,
-    image: "/images/red-cup-latte.jpg",
+    price: "₱120 / ₱130",
+    image: "/images/salted-cream-latte.jpg",
   },
   {
     name: "Biscoff Frappe",
-    price: 175,
+    price: "₱155",
     image: "/images/biscoff-frappe.jpg",
-  },
-  {
-    name: "Almond Croffle",
-    price: 145,
-    image: "/images/almond-croffle-latte.jpg",
   },
 ]
 
@@ -52,8 +52,8 @@ export default function HomePage() {
         <div className="relative h-[90vh] min-h-[600px] flex items-center">
           <div className="absolute inset-0">
             <Image
-              src="/images/cafe-exterior-night.jpg"
-              alt="Cafe Primo exterior at night"
+              src="/images/cafe-exterior-day.jpg"
+              alt="Cafe Primo exterior"
               fill
               className="object-cover"
               priority
@@ -196,7 +196,7 @@ export default function HomePage() {
                 </div>
                 <div className="p-6">
                   <h3 className="font-serif text-xl font-semibold text-foreground">{item.name}</h3>
-                  <p className="text-primary font-medium mt-1">₱{item.price}</p>
+                  <p className="text-primary font-medium mt-1">{item.price}</p>
                 </div>
               </div>
             ))}
@@ -213,28 +213,32 @@ export default function HomePage() {
               A cozy neighborhood café where you can unwind, work, or catch up with friends.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <div className="relative h-64 rounded-2xl overflow-hidden col-span-2 row-span-2">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {/* Large feature image */}
+            <div className="col-span-2 md:row-span-2 relative h-80 md:h-[32rem] rounded-2xl overflow-hidden">
               <Image
-                src="/images/cafe-exterior-day.jpg"
-                alt="Cafe Primo exterior daytime"
+                src="/images/cafe-storefront.jpg"
+                alt="Cafe storefront"
                 fill
                 className="object-cover"
               />
             </div>
-            <div className="relative h-64 rounded-2xl overflow-hidden">
-              <Image src="/images/latte-art.jpg" alt="Latte art" fill className="object-cover" />
-            </div>
-            <div className="relative h-64 rounded-2xl overflow-hidden">
-              <Image src="/images/biscoff-frappe.jpg" alt="Biscoff Frappe" fill className="object-cover" />
-            </div>
-            <div className="relative h-64 rounded-2xl overflow-hidden">
-              <Image src="/images/interior-seating.jpg" alt="Interior seating area" fill className="object-cover" />
-            </div>
-            <div className="relative h-64 rounded-2xl overflow-hidden">
+            {/* Vertical tall images */}
+            <div className="md:row-span-2 relative h-80 md:h-[32rem] rounded-2xl overflow-hidden">
               <Image src="/images/espresso-machine.jpg" alt="Espresso machine" fill className="object-cover" />
             </div>
-            <div className="relative h-64 rounded-2xl overflow-hidden col-span-2">
+            <div className="md:row-span-2 relative h-80 md:h-[32rem] rounded-2xl overflow-hidden">
+              <Image src="/images/biscoff-frappe.jpg" alt="Biscoff Frappe" fill className="object-cover" />
+            </div>
+            {/* Medium squares */}
+            <div className="relative h-40 md:h-60 rounded-2xl overflow-hidden">
+              <Image src="/images/latte-art.jpg" alt="Latte art" fill className="object-cover" />
+            </div>
+            <div className="relative h-40 md:h-60 rounded-2xl overflow-hidden">
+              <Image src="/images/salted-cream-latte.jpg" alt="Salted cream latte" fill className="object-cover" />
+            </div>
+            {/* Wide rectangle */}
+            <div className="col-span-2 relative h-40 md:h-60 rounded-2xl overflow-hidden">
               <Image
                 src="/images/drinks-croffles-spread.jpg"
                 alt="Drinks and croffles spread"
@@ -242,7 +246,20 @@ export default function HomePage() {
                 className="object-cover"
               />
             </div>
-            <div className="relative h-64 rounded-2xl overflow-hidden">
+            {/* Vertical tall */}
+            <div className="md:row-span-2 relative h-80 md:h-[28rem] rounded-2xl overflow-hidden">
+              <Image
+                src="/images/interior-seating.jpg"
+                alt="Interior seating"
+                fill
+                className="object-cover"
+              />
+            </div>
+            {/* Medium rectangles */}
+            <div className="relative h-40 md:h-56 rounded-2xl overflow-hidden">
+              <Image src="/images/cafe-night-seating.jpg" alt="Night seating area" fill className="object-cover" />
+            </div>
+            <div className="col-span-2 relative h-40 md:h-56 rounded-2xl overflow-hidden">
               <Image
                 src="/images/almond-croffle-latte.jpg"
                 alt="Almond croffle with latte"
@@ -250,11 +267,9 @@ export default function HomePage() {
                 className="object-cover"
               />
             </div>
-            <div className="relative h-64 rounded-2xl overflow-hidden">
-              <Image src="/images/cafe-storefront.jpg" alt="Cafe Primo storefront" fill className="object-cover" />
-            </div>
-            <div className="relative h-64 rounded-2xl overflow-hidden col-span-2">
-              <Image src="/images/cafe-exterior-night.jpg" alt="Cafe exterior at night" fill className="object-cover" />
+            {/* Bottom wide image */}
+            <div className="col-span-2 md:col-span-3 relative h-64 md:h-80 rounded-2xl overflow-hidden">
+              <Image src="/images/cafe-night-exterior.jpg" alt="Cafe exterior at night" fill className="object-cover" />
             </div>
           </div>
         </div>

@@ -10,7 +10,6 @@ import { CartDrawer } from "./cart-drawer"
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/menu", label: "Menu" },
-  { href: "/store", label: "Store" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ]
@@ -42,7 +41,7 @@ export function Navbar() {
             </div>
 
             <div className="flex items-center gap-4">
-              <button
+              {/* <button
                 onClick={() => setCartOpen(true)}
                 className="relative p-2 text-foreground hover:text-primary transition-colors"
               >
@@ -52,7 +51,7 @@ export function Navbar() {
                     {totalItems}
                   </span>
                 )}
-              </button>
+              </button> */}
 
               <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 text-foreground">
                 {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

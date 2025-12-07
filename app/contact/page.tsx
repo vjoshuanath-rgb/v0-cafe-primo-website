@@ -107,9 +107,18 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
+              {/* Map */}
               <div className="mt-12 relative h-64 rounded-xl overflow-hidden">
-                <Image src="/images/image.png" alt="Cafe Primo exterior" fill className="object-cover" />
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123.45!2d123.6387!3d10.1068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9f3f3f3f3f3f3%3A0x0!2s4J4Q%2BRH2%2C%20Carcar%2C%20Cebu!5e0!3m2!1sen!2sph!4v1234567890"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="absolute inset-0"
+                ></iframe>
               </div>
             </div>
 

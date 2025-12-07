@@ -95,19 +95,50 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Cafe Gallery Section - Updated with unique cafe images */}
+      {/* Our Space Gallery Section */}
       <section className="py-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl md:text-4xl text-foreground">Our Café</h2>
-            <p className="mt-4 text-muted-foreground">Where every corner tells a story.</p>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground">Our Space</h2>
+            <p className="mt-4 text-muted-foreground">A cozy neighborhood café where you can unwind, work, or catch up with friends.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="relative h-80 rounded-2xl overflow-hidden">
-              <Image src="/images/cafe-night-exterior.jpg" alt="Cafe Primo at night" fill className="object-cover" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {/* Large feature image */}
+            <div className="col-span-2 md:row-span-2 relative h-80 md:h-[32rem] rounded-2xl overflow-hidden">
+              <Image src="/images/cafe-storefront.jpg" alt="Cafe storefront" fill className="object-cover" />
             </div>
-            <div className="relative h-80 rounded-2xl overflow-hidden">
-              <Image src="/images/cafe-night-seating.jpg" alt="Outdoor seating area" fill className="object-cover" />
+            {/* Vertical tall images */}
+            <div className="md:row-span-2 relative h-80 md:h-[32rem] rounded-2xl overflow-hidden">
+              <Image src="/images/espresso-machine.jpg" alt="Espresso machine" fill className="object-cover" />
+            </div>
+            <div className="md:row-span-2 relative h-80 md:h-[32rem] rounded-2xl overflow-hidden">
+              <Image src="/images/biscoff-frappe.jpg" alt="Biscoff frappe" fill className="object-cover" />
+            </div>
+            {/* Medium squares */}
+            <div className="relative h-40 md:h-60 rounded-2xl overflow-hidden">
+              <Image src="/images/latte-art.jpg" alt="Latte with art" fill className="object-cover" />
+            </div>
+            <div className="relative h-40 md:h-60 rounded-2xl overflow-hidden">
+              <Image src="/images/salted-cream-latte.jpg" alt="Salted cream latte" fill className="object-cover" />
+            </div>
+            {/* Wide rectangle */}
+            <div className="col-span-2 relative h-40 md:h-60 rounded-2xl overflow-hidden">
+              <Image src="/images/drinks-croffles-spread.jpg" alt="Drinks and croffles spread" fill className="object-cover" />
+            </div>
+            {/* Vertical tall */}
+            <div className="md:row-span-2 relative h-80 md:h-[28rem] rounded-2xl overflow-hidden">
+              <Image src="/images/interior-seating.jpg" alt="Interior seating" fill className="object-cover" />
+            </div>
+            {/* Medium rectangles */}
+            <div className="relative h-40 md:h-56 rounded-2xl overflow-hidden">
+              <Image src="/images/cafe-night-seating.jpg" alt="Night seating area" fill className="object-cover" />
+            </div>
+            <div className="col-span-2 relative h-40 md:h-56 rounded-2xl overflow-hidden">
+              <Image src="/images/almond-croffle-latte.jpg" alt="Almond croffle with latte" fill className="object-cover" />
+            </div>
+            {/* Bottom wide image */}
+            <div className="col-span-2 md:col-span-3 relative h-64 md:h-80 rounded-2xl overflow-hidden">
+              <Image src="/images/cafe-night-exterior.jpg" alt="Cafe exterior at night" fill className="object-cover" />
             </div>
           </div>
         </div>
