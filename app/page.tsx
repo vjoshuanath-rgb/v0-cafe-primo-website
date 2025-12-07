@@ -80,14 +80,6 @@ export default function HomePage() {
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="bg-card/10 text-card border-card/30 hover:bg-card/20"
-              >
-                <Link href="/store">Shop Now</Link>
-              </Button>
             </div>
           </div>
         </div>
